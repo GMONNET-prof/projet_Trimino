@@ -8,10 +8,10 @@ def generer_case_noire(grille):
     Sortie : Coordonnées de la case noire"""
     
     n = len(grille)
-    x = random.randint(0, n-1)
-    y = random.randint(0, n-1)
+    x = randint(0, n-1)
+    y = randint(0, n-1)
     
-    grille[y,x] = -1 # Case noire créée
+    grille[y][x] = -1 # Case noire créée
     
     return x, y
     
